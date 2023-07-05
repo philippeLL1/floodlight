@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibImGui.a CMakeFiles/libImGui.dir/ImGui.o
+/usr/bin/ranlib liblibImGui.a
