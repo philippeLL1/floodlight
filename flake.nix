@@ -1,46 +1,65 @@
 {
-  description = "Description for the project";
-
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
+    systems.url = "github:nix-systems/default";
     devenv.url = "github:cachix/devenv";
-    nix2container.url = "github:nlewo/nix2container";
-    nix2container.inputs.nixpkgs.follows = "nixpkgs";
-    mk-shell-bin.url = "github:rrbutani/nix-mk-shell-bin";
+    nixgl.url = "github:guibou/nixGL";
   };
 
-  outputs = inputs@{ flake-parts, ... }:
-    flake-parts.lib.mkFlake { inherit inputs; } {
-      imports = [
-        inputs.devenv.flakeModule
-      ];
-      systems = [ "x86_64-linux" "i686-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
+  outputs = { self, nixgl, nixpkgs, devenv, systems, ... } @ inputs:
+    let
+      forEachSystem = nixpkgs.lib.genAttrs (import systems);
+    in
+    {
+      devShells = forEachSystem
+        (system:
+          let
+            pkgs = import nixpkgs { 
+              system = "${system}";
+              overlays = [ nixgl.overlay ];
+            };
+          in
+          {
+            default = devenv.lib.mkShell {
+              inherit inputs pkgs;
+              modules = [
+                {
+                  env.CPLUS_INCLUDE_PATH = builtins.getEnv "C_INCLUDE_PATH";
+                  languages.cplusplus.enable = true;
 
-      perSystem = { config, self', inputs', pkgs, system, ... }: {
-        # Per-system attributes can be defined here. The self' and inputs'
-        # module parameters provide easy access to attributes of the same
-        # system.
+                  packages = [ 
+                    pkgs.imgui 
+                    pkgs.glfw 
+                    pkgs.libGL
+                  ];
 
-        # Equivalent to  inputs'.nixpkgs.legacyPackages.hello;
-        packages.default = pkgs.hello;
+                  enterShell = ''
+                    export PATH=$PATH:$HOME/code/examples/dmenu
+                  '';
 
-        devenv.shells.default = {
-          name = "my-project";
+                  env.compile_flags = builtins.concatStringsSep (" ") [
+                    "-std=c++11"
+                    "-lGl"
+                    "-lglfw"
+                    "-I$DEVENV_PROFILE/include/imgui"
+                    "-Isrc/floodlight/include"
+                    "-o build/floodlight"
+                    "src/floodlight/main.cpp" 
+                    "src/floodlight/components.cpp" 
+                    "src/floodlight/distance.cpp" 
+                    "$DEVENV_PROFILE/include/imgui/*.cpp" 
+                    "src/imgui_impl/imgui_impl_glfw.cpp" 
+                    "src/imgui_impl/imgui_impl_opengl3.cpp"
+                    "-Wdeprecated-declarations"
+                  ];
 
-          # https://devenv.sh/reference/options/
-          packages = [ config.packages.default ];
-
-          enterShell = ''
-            hello
-          '';
-        };
-
-      };
-      flake = {
-        # The usual flake attributes can be defined here, including system-
-        # agnostic ones like nixosModule and system-enumerating ones, although
-        # those are more easily expressed in perSystem.
-
-      };
+                  # TODO: Change to cmake
+                  scripts.build.exec = "g++ " + (builtins.getEnv "compile_flags");
+                  scripts.run.exec = "build/floodlight $@";
+                  scripts.floodlight.exec = "run $(dmenu_path) $@";
+                }
+              ];
+            };
+          });
     };
 }
