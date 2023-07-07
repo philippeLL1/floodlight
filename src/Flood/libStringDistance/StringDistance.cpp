@@ -1,20 +1,19 @@
 #include <string>
-#include "include/distance.hpp"
+#include "StringDistance.h"
 #include <iostream>
 #include <array>
-using namespace std;
 
-int Distance::Levenshtein(const string first, const string second) {
+int StringDistance::Levenshtein(const std::string first, const std::string second) {
 
   // Create the matrix needed for the algorithm
   int distances[first.size() + 1][second.size() + 1];
-  //
-  // for (int i = 0; i <= first.size(); ++i) {
-  //   for (int j = 0; j <= second.size(); ++j) {
-  //     distances[i][j] = 0;
-  //   }
-  // }
-  //
+
+  for (int i = 0; i <= first.size(); ++i) {
+    for (int j = 0; j <= second.size(); ++j) {
+      distances[i][j] = 0;
+    }
+  }
+
   for (int i = 0; i <= first.size(); ++i) {
     distances[i][0] = i;
   }
@@ -33,7 +32,7 @@ int Distance::Levenshtein(const string first, const string second) {
       int insertion     = distances[i][j - 1] + 1;
       int substitution  = distances[i - 1][j - 1] + substitution_cost;
 
-      distances[i][j] = min(insertion, min(deletion, substitution));
+      distances[i][j] = std::min(insertion, std::min(deletion, substitution));
     }
   }
 

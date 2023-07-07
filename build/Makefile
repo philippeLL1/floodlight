@@ -57,7 +57,7 @@ RM = /nix/store/qnvvm1gx29n4kcmz0ly8i7znwl37waaw-cmake-3.25.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/drawer/code/floodlight/src
+CMAKE_SOURCE_DIR = /Users/drawer/code/floodlight
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/drawer/code/floodlight/build
@@ -126,7 +126,7 @@ Flood: cmake_check_build_system
 
 # fast build rule for target.
 Flood/fast:
-	$(MAKE) $(MAKESILENT) -f Flood/CMakeFiles/Flood.dir/build.make Flood/CMakeFiles/Flood.dir/build
+	$(MAKE) $(MAKESILENT) -f src/Flood/CMakeFiles/Flood.dir/build.make src/Flood/CMakeFiles/Flood.dir/build
 .PHONY : Flood/fast
 
 #=============================================================================
@@ -139,7 +139,7 @@ libStringDistance: cmake_check_build_system
 
 # fast build rule for target.
 libStringDistance/fast:
-	$(MAKE) $(MAKESILENT) -f Flood/libStringDistance/CMakeFiles/libStringDistance.dir/build.make Flood/libStringDistance/CMakeFiles/libStringDistance.dir/build
+	$(MAKE) $(MAKESILENT) -f src/Flood/libStringDistance/CMakeFiles/libStringDistance.dir/build.make src/Flood/libStringDistance/CMakeFiles/libStringDistance.dir/build
 .PHONY : libStringDistance/fast
 
 #=============================================================================
@@ -152,21 +152,8 @@ Light: cmake_check_build_system
 
 # fast build rule for target.
 Light/fast:
-	$(MAKE) $(MAKESILENT) -f Light/CMakeFiles/Light.dir/build.make Light/CMakeFiles/Light.dir/build
+	$(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/build
 .PHONY : Light/fast
-
-#=============================================================================
-# Target rules for targets named libImGui
-
-# Build rule for target.
-libImGui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libImGui
-.PHONY : libImGui
-
-# fast build rule for target.
-libImGui/fast:
-	$(MAKE) $(MAKESILENT) -f libImGui/CMakeFiles/libImGui.dir/build.make libImGui/CMakeFiles/libImGui.dir/build
-.PHONY : libImGui/fast
 
 # Help Target
 help:
@@ -178,7 +165,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Flood"
 	@echo "... Light"
-	@echo "... libImGui"
 	@echo "... libStringDistance"
 .PHONY : help
 

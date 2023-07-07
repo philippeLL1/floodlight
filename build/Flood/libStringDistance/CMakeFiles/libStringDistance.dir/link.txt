@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblibStringDistance.a CMakeFiles/libStringDistance.dir/StringDistance.o
-/usr/bin/ranlib liblibStringDistance.a

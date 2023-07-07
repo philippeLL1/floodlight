@@ -9,19 +9,19 @@
 #include <map>
 
 // ImGUI
-#include "imgui/imgui.h"
+#include "imgui.h"
 #include "imgui/backends/imgui_impl_glfw.h"
 #include "imgui/backends/imgui_impl_opengl3.h"
-#define GL_SILENCE_DEPRECATION
 
 // graphics library
 #include <GLFW/glfw3.h> // Will drag system OpenGL headers
 #include <vector>
 
 // helper functions
-#include "include/distance.hpp"
-#include "include/components.h"
+#include "StringDistance.h"
+#include "components.h"
 
+#define GL_SILENCE_DEPRECATION
 
 // Floodlight Options
 #define WIDTH 1700
@@ -207,8 +207,8 @@ int main(int argc, char** argv)
         // Sort search results
         auto compareDistance = [&](std::string fst, std::string snd) { 
 
-          int fstDistance = Distance::Levenshtein(userSearch, fst);
-          int sndDistance = Distance::Levenshtein(userSearch, snd);
+          int fstDistance = StringDistance::Levenshtein(userSearch, fst);
+          int sndDistance = StringDistance::Levenshtein(userSearch, snd);
           return fstDistance < sndDistance;
         };
         std::sort(args.begin(), args.end(), compareDistance);       

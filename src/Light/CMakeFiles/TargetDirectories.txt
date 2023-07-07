@@ -1,0 +1,3 @@
+/Users/drawer/code/floodlight/src/Light/CMakeFiles/Light.dir
+/Users/drawer/code/floodlight/src/Light/CMakeFiles/edit_cache.dir
+/Users/drawer/code/floodlight/src/Light/CMakeFiles/rebuild_cache.dir

@@ -1,5 +1,5 @@
 #include <string>
-class StringDistance {
-  public:
-    std::string method();
+
+namespace StringDistance {
+     int Levenshtein(std::string first, std::string second);
 };

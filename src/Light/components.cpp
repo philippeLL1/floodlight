@@ -1,5 +1,5 @@
-#include "include/components.h"
-#include "imgui/imgui.h"
+#include "components.h"
+#include "imgui.h"
 
 void Components::resultBox(const char* name, 
                            bool selected, 

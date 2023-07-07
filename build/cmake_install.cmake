@@ -1,4 +1,4 @@
-# Install script for directory: /Users/drawer/code/floodlight/src
+# Install script for directory: /Users/drawer/code/floodlight
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,11 +38,8 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/Users/drawer/code/floodlight/build/Flood/cmake_install.cmake")
-  include("/Users/drawer/code/floodlight/build/Light/cmake_install.cmake")
-  include("/Users/drawer/code/floodlight/build/libImGui/cmake_install.cmake")
-
+  # Include the install script for the subdirectory.
+  include("/Users/drawer/code/floodlight/build/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
