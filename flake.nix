@@ -1,13 +1,21 @@
 {
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
-    flake-utils.url = "github:numtide/flake-utils";
-    dearImGUI.url = "github:ocornut/imgui";
-    dearImGUI.flake = false;
+  description = "cross-platform dmenu clone";
+
+  inputs = { 
+    flake-utils.url = "github:numtide/flake-utils"; 
+    nixGL.url = "github:guibou/nixGL"; 
   };
 
-  outputs = inputs:
-    inputs.flake-utils.lib.eachDefaultSystem (system:
-      let pkgs = inputs.nixpkgs.legacyPackages.${system};
-      in { devShell = pkgs.mkShell { buildInputs = [ inputs.dearImGUI ]; }; });
+  outputs = { self, nixpkgs, flake-utils, nixGL }:
+    flake-utils.lib.eachDefaultSystem
+      (system:
+      let pkgs = import nixpkgs { 
+        system = "${system}";
+        overlays = [ nixGL.overlay]; 
+      }; in
+        {
+          devShells.default = import ./shell.nix { inherit pkgs; };
+        }
+      );
 }
+
