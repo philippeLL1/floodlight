@@ -1,12 +1,14 @@
 { pkgs ? import <nixpkgs> { } }:
 with pkgs;
 mkShell {
+  inherit pkgs;
   buildInputs = [
-    nixpkgs-fmt
-    nixGL
+    imgui
+    libGL
+    glfw
   ];
 
   shellHook = ''
-    # ...
+    echo "lolcat"
   '';
 }
