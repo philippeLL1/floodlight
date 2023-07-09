@@ -201,6 +201,9 @@ Floodlight_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Floodlight_SOURCE_DIR:STATIC=/Users/drawer/code/floodlight
 
+//Path to a library.
+GLFW:FILEPATH=GLFW-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries

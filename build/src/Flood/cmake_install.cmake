@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/drawer/code/floodlight/build/src/Flood/libStringDistance/cmake_install.cmake")
+  include("/Users/drawer/code/floodlight/build/src/Flood/libStringUtils/cmake_install.cmake")
 endif()
 

@@ -130,6 +130,20 @@ Light/fast:
 	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/build
 .PHONY : Light/fast
 
+# Convenience name for target.
+src/Light/CMakeFiles/imgui.dir/rule:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Light/CMakeFiles/imgui.dir/rule
+.PHONY : src/Light/CMakeFiles/imgui.dir/rule
+
+# Convenience name for target.
+imgui: src/Light/CMakeFiles/imgui.dir/rule
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
 components.o: components.cpp.o
 .PHONY : components.o
 
@@ -178,77 +192,149 @@ light.cpp.s:
 	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/light.cpp.s
 .PHONY : light.cpp.s
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.o: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.o
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.o
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.o: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.o
 
 # target to build an object file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.o:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.o
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.o
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.o:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.o
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.i: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.i
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.i
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.i: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.i
 
 # target to preprocess a source file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.i:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.i
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.i
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.i:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.i
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.s: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.s
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.s
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.s: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.s
 
 # target to generate assembly for a file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.s:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.s
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.s
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.s:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.cpp.s
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.o: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.o
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.o
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.o: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.o
 
 # target to build an object file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.o:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.o
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.o
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.o:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.o
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.i: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.i
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.i
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.i: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.i
 
 # target to preprocess a source file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.i:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.i
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.i
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.i:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.i
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.s: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.s
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.s
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.s: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.s
 
 # target to generate assembly for a file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.s:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.s
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.s
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.s:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.cpp.s
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.o: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.o
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.o
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.o: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.o
 
 # target to build an object file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.o:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.o
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.o
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.o:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.o
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.i: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.i
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.i
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.i: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.i
 
 # target to preprocess a source file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.i:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.i
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.i
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.i:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.i
 
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.s: nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.s
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.s
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.s: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.s
 
 # target to generate assembly for a file
-nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.s:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.s
-.PHONY : nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.cpp.s
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.s:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.cpp.s
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.o: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.o
+
+# target to build an object file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.o:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.o
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.i: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.i
+
+# target to preprocess a source file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.i:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.i
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.s: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.s:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.cpp.s
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.o: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.o
+
+# target to build an object file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.o:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.o
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.i: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.i
+
+# target to preprocess a source file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.i:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.i
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.s: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.s:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.cpp.s
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.o: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.o
+
+# target to build an object file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.o:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.o
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.o
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.i: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.i:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.i
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.i
+
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.s: nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.s:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.s
+.PHONY : nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.cpp.s
 
 # Help Target
 help:
@@ -259,21 +345,31 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Light"
+	@echo "... imgui"
 	@echo "... components.o"
 	@echo "... components.i"
 	@echo "... components.s"
 	@echo "... light.o"
 	@echo "... light.i"
 	@echo "... light.s"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.o"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.i"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_glfw.s"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.o"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.i"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/backends/imgui_impl_opengl3.s"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.o"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.i"
-	@echo "... nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui/imgui.s"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.o"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.i"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_glfw.s"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.o"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.i"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/backends/imgui_impl_opengl3.s"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.o"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.i"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui.s"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.o"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.i"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_draw.s"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.o"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.i"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_tables.s"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.o"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.i"
+	@echo "... nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui/imgui_widgets.s"
 .PHONY : help
 
 

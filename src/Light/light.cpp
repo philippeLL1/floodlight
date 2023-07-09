@@ -10,8 +10,8 @@
 
 // ImGUI
 #include "imgui.h"
-#include "imgui/backends/imgui_impl_glfw.h"
-#include "imgui/backends/imgui_impl_opengl3.h"
+#include "backends/imgui_impl_glfw.h"
+#include "backends/imgui_impl_opengl3.h"
 
 // graphics library
 #include <GLFW/glfw3.h> // Will drag system OpenGL headers
@@ -46,7 +46,6 @@ void SelectableColor(ImU32 color) {
   ImVec2 pMin = ImGui::GetItemRectMin();
   ImGui::GetWindowDrawList()->AddRectFilled(pMin, pMax, color);
 }
-
 
 
 static auto glPlatform() -> const char* {
@@ -148,7 +147,6 @@ int main(int argc, char** argv)
     // Get OpenGL version based on platform
     const char* glsl_version = glPlatform();
 
-
     const ImVec2 textbox_size(2.0, 1.0);
 
     // Create GLFW window
@@ -207,8 +205,8 @@ int main(int argc, char** argv)
         // Sort search results
         auto compareDistance = [&](std::string fst, std::string snd) { 
 
-          int fstDistance = StringDistance::Levenshtein(userSearch, fst);
-          int sndDistance = StringDistance::Levenshtein(userSearch, snd);
+          int fstDistance = StringUtils::LevenshteinDistance(userSearch, fst);
+          int sndDistance = StringUtils::LevenshteinDistance(userSearch, snd);
           return fstDistance < sndDistance;
         };
         std::sort(args.begin(), args.end(), compareDistance);       

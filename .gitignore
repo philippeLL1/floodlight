@@ -1,3 +1,4 @@
 .devenv
 .direnv
 .envrc
+compile_commands.json

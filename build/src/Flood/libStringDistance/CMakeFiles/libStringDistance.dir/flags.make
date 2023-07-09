@@ -4,9 +4,9 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/nix/store/6lxsnhxas7s9vbph6plvzpvf8vphc67v-devenv-profile/include/imgui -I/Users/drawer/code/floodlight/src/Flood/libStringDistance/.
+CXX_INCLUDES = -I/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include/imgui -I/nix/store/dz3y170mr4lypv0hc262gw5z2ky89x52-devenv-profile/include -I/Users/drawer/code/floodlight/src/Flood/libStringDistance/.
 
-CXX_FLAGSarm64 =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++17
+CXX_FLAGSarm64 =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++20
 
-CXX_FLAGS =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++17
+CXX_FLAGS =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -std=gnu++20
 

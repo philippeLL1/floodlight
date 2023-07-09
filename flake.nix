@@ -55,7 +55,7 @@
 
                   # TODO: Change to cmake
                   scripts.build.exec = "g++ " + (builtins.getEnv "compile_flags");
-                  scripts.run.exec = "build/floodlight $@";
+                  scripts.floodpath.exec = "echo $PATH | sed -e 's/\:/\ /g' | xargs ./build/src/Flood/Flood ";
                   scripts.floodlight.exec = "run $(dmenu_path) $@";
                 }
               ];

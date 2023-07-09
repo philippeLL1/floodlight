@@ -139,7 +139,7 @@ libStringDistance: cmake_check_build_system
 
 # fast build rule for target.
 libStringDistance/fast:
-	$(MAKE) $(MAKESILENT) -f src/Flood/libStringDistance/CMakeFiles/libStringDistance.dir/build.make src/Flood/libStringDistance/CMakeFiles/libStringDistance.dir/build
+	$(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build
 .PHONY : libStringDistance/fast
 
 #=============================================================================
@@ -155,6 +155,19 @@ Light/fast:
 	$(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/Light.dir/build.make src/Light/CMakeFiles/Light.dir/build
 .PHONY : Light/fast
 
+#=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f src/Light/CMakeFiles/imgui.dir/build.make src/Light/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +178,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Flood"
 	@echo "... Light"
+	@echo "... imgui"
 	@echo "... libStringDistance"
 .PHONY : help
 

@@ -92,7 +92,6 @@ Flood_EXTERNAL_OBJECTS =
 
 src/Flood/Flood: src/Flood/CMakeFiles/Flood.dir/flood.cpp.o
 src/Flood/Flood: src/Flood/CMakeFiles/Flood.dir/build.make
-src/Flood/Flood: src/Flood/libStringDistance/liblibStringDistance.a
 src/Flood/Flood: src/Flood/CMakeFiles/Flood.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/drawer/code/floodlight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Flood"
 	cd /Users/drawer/code/floodlight/build/src/Flood && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Flood.dir/link.txt --verbose=$(VERBOSE)
