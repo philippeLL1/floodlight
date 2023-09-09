@@ -17,4 +17,4 @@ add_compile_definitions(GL_SILENCE_DEPRECATED)
 
 target_include_directories(Light PUBLIC ./include/)
 
-target_link_libraries(Light PRIVATE libStringDistance Gl glfw imgui)
+target_link_libraries(Light PRIVATE libStringUtils Gl glfw imgui)

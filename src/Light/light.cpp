@@ -18,7 +18,7 @@
 #include <vector>
 
 // helper functions
-#include "StringDistance.h"
+#include "StringUtils.h"
 #include "components.h"
 
 #define GL_SILENCE_DEPRECATION
@@ -122,18 +122,17 @@ bool CustomSelectable(const char* label, bool* p_selected, ImU32 bg_color, ImGui
   ImDrawList* draw_list = ImGui::GetWindowDrawList();
   draw_list->ChannelsSplit(2);
 
-  // Channel number is like z-order. Widgets in higher channels are rendered above widgets in lower channels.
   draw_list->ChannelsSetCurrent(1);
 
   bool result = ImGui::Selectable(label, p_selected, flags, size_arg);
 
   if (!ImGui::IsItemHovered() && !ImGui::IsItemActive() && !*p_selected) {
-    // Render background behind Selectable().
+    // Render background behind Selectable
     draw_list->ChannelsSetCurrent(0);
     SelectableColor(bg_color);
   }
 
-  // Commit changes.
+  // Commit changes to viewport
   draw_list->ChannelsMerge();
   return result;
 }
@@ -143,7 +142,7 @@ int main(int argc, char** argv)
     glfwSetErrorCallback(glfw_error_callback);
     if (!glfwInit())
         return 1;
- 
+
     // Get OpenGL version based on platform
     const char* glsl_version = glPlatform();
 
@@ -153,7 +152,7 @@ int main(int argc, char** argv)
     GLFWwindow* window = windowSetup();
     if (window == nullptr)
         return 1;
-     
+
     ImGuiIO& io = ioConfig();
 
     // Setup Dear ImGui style
@@ -172,7 +171,7 @@ int main(int argc, char** argv)
     // Our state
     ImVec4 clear_color = ImVec4(0.2, 1.0, 0.60f, 1.00f);
 
-    // Input arguments 
+    // Input arguments
     std::vector<std::string> args;
     for (int i = 1; i < argc; ++i) {
       args.push_back(argv[i]);
@@ -187,7 +186,7 @@ int main(int argc, char** argv)
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        // Start the main window 
+        // Start the main window
         ImGui::Begin("Search", NULL, windowFlags);
         ImGui::SetWindowPos(ImVec2(0, 0));
         ImGui::SetWindowSize(ImVec2(WIDTH, HEIGHT));
@@ -200,35 +199,35 @@ int main(int argc, char** argv)
         ImGui::SetNextItemWidth(SEARCHBOX_SIZE);
         ImGui::InputText("##search_box", buf, sizeof(buf), ImGuiInputTextFlags_AutoSelectAll);
         ImGui::PopStyleColor();
-        
-        
+
+
         // Sort search results
-        auto compareDistance = [&](std::string fst, std::string snd) { 
+        auto compareDistance = [&](std::string fst, std::string snd) {
 
           int fstDistance = StringUtils::LevenshteinDistance(userSearch, fst);
           int sndDistance = StringUtils::LevenshteinDistance(userSearch, snd);
           return fstDistance < sndDistance;
         };
-        std::sort(args.begin(), args.end(), compareDistance);       
+        std::sort(args.begin(), args.end(), compareDistance);
 
         bool select = true;
-        
+
         // Display search results
         for (std::string s : args) {
-          
+
           ImGui::SameLine();
           // ImGui::Selectable(s.c_str(), select, 0, ImVec2(TEXT_PADDING , HEIGHT));
-          Components::resultBox(s.c_str(), 
-              select, 
-              ImVec4(TEXT_FG), 
-              ImVec4(TEXT_BG), 
-              TEXT_PADDING + (s.size() * TEXT_PADDING_FACTOR), 
+          Components::resultBox(s.c_str(),
+              select,
+              ImVec4(TEXT_FG),
+              ImVec4(TEXT_BG),
+              TEXT_PADDING + (s.size() * TEXT_PADDING_FACTOR),
               HEIGHT);
 
           select = false;
         }
 
-        
+
         if (ImGui::IsKeyDown(ImGuiKey_Enter)) {
           std::cout << args[0] << std::endl;
           return 0;
@@ -240,23 +239,23 @@ int main(int argc, char** argv)
         style.WindowPadding = ImVec2(0., 0.);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(BG_COLOR);
         ImGui::End();
-        
+
         // Rendering
         ImGui::Render();
         int display_w, display_h;
         glfwGetFramebufferSize(window, &display_w, &display_h);
         glViewport(0, 0, display_w, display_h);
         glClearColor(
-            clear_color.x * clear_color.w, 
-            clear_color.y * clear_color.w, 
-            clear_color.z * clear_color.w, 
+            clear_color.x * clear_color.w,
+            clear_color.y * clear_color.w,
+            clear_color.z * clear_color.w,
             clear_color.w);
 
         glClear(GL_COLOR_BUFFER_BIT);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         glfwSwapBuffers(window);
     }
-    
+
     // Cleanup
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();

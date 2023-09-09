@@ -108,7 +108,7 @@ Light_EXTERNAL_OBJECTS =
 src/Light/Light: src/Light/CMakeFiles/Light.dir/light.cpp.o
 src/Light/Light: src/Light/CMakeFiles/Light.dir/components.cpp.o
 src/Light/Light: src/Light/CMakeFiles/Light.dir/build.make
-src/Light/Light: src/Flood/libStringUtils/liblibStringDistance.a
+src/Light/Light: src/Flood/libStringUtils/liblibStringUtils.a
 src/Light/Light: src/Light/libimgui.a
 src/Light/Light: src/Light/CMakeFiles/Light.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/drawer/code/floodlight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Light"

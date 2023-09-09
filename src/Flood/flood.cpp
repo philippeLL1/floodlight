@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
         try {
           if ((fs::status(file).permissions() & fs::perms::owner_exec) != fs::perms::none && !fs::is_directory(file)) {
 
-            results[file.path()] = trimPath(file.path());
+            results[file.path()] = StringUtils::TrimPath(file.path());
 
           }
         } catch (fs::filesystem_error e) {

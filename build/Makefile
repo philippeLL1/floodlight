@@ -130,17 +130,17 @@ Flood/fast:
 .PHONY : Flood/fast
 
 #=============================================================================
-# Target rules for targets named libStringDistance
+# Target rules for targets named libStringUtils
 
 # Build rule for target.
-libStringDistance: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libStringDistance
-.PHONY : libStringDistance
+libStringUtils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libStringUtils
+.PHONY : libStringUtils
 
 # fast build rule for target.
-libStringDistance/fast:
-	$(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build
-.PHONY : libStringDistance/fast
+libStringUtils/fast:
+	$(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/build
+.PHONY : libStringUtils/fast
 
 #=============================================================================
 # Target rules for targets named Light
@@ -179,7 +179,7 @@ help:
 	@echo "... Flood"
 	@echo "... Light"
 	@echo "... imgui"
-	@echo "... libStringDistance"
+	@echo "... libStringUtils"
 .PHONY : help
 
 

@@ -1,7 +1,8 @@
 #include <string>
-#include "StringDistance.h"
 #include <iostream>
 #include <array>
+
+#include "StringUtils.h"
 
 int StringUtils::LevenshteinDistance(const std::string first, const std::string second) {
 

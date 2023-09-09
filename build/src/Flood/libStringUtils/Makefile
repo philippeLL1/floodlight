@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/rule:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/rule
-.PHONY : src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/rule
+src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/rule:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/rule
+.PHONY : src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/rule
 
 # Convenience name for target.
-libStringDistance: src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/rule
-.PHONY : libStringDistance
+libStringUtils: src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/rule
+.PHONY : libStringUtils
 
 # fast build rule for target.
-libStringDistance/fast:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build
-.PHONY : libStringDistance/fast
+libStringUtils/fast:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/build
+.PHONY : libStringUtils/fast
 
-StringDistance.o: StringDistance.cpp.o
-.PHONY : StringDistance.o
+StringUtils.o: StringUtils.cpp.o
+.PHONY : StringUtils.o
 
 # target to build an object file
-StringDistance.cpp.o:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/StringDistance.cpp.o
-.PHONY : StringDistance.cpp.o
+StringUtils.cpp.o:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/StringUtils.cpp.o
+.PHONY : StringUtils.cpp.o
 
-StringDistance.i: StringDistance.cpp.i
-.PHONY : StringDistance.i
+StringUtils.i: StringUtils.cpp.i
+.PHONY : StringUtils.i
 
 # target to preprocess a source file
-StringDistance.cpp.i:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/StringDistance.cpp.i
-.PHONY : StringDistance.cpp.i
+StringUtils.cpp.i:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/StringUtils.cpp.i
+.PHONY : StringUtils.cpp.i
 
-StringDistance.s: StringDistance.cpp.s
-.PHONY : StringDistance.s
+StringUtils.s: StringUtils.cpp.s
+.PHONY : StringUtils.s
 
 # target to generate assembly for a file
-StringDistance.cpp.s:
-	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringDistance.dir/StringDistance.cpp.s
-.PHONY : StringDistance.cpp.s
+StringUtils.cpp.s:
+	cd /Users/drawer/code/floodlight/build && $(MAKE) $(MAKESILENT) -f src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/build.make src/Flood/libStringUtils/CMakeFiles/libStringUtils.dir/StringUtils.cpp.s
+.PHONY : StringUtils.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... libStringDistance"
-	@echo "... StringDistance.o"
-	@echo "... StringDistance.i"
-	@echo "... StringDistance.s"
+	@echo "... libStringUtils"
+	@echo "... StringUtils.o"
+	@echo "... StringUtils.i"
+	@echo "... StringUtils.s"
 .PHONY : help
 
 

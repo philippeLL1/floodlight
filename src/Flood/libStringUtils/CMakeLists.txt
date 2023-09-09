@@ -1,2 +1,2 @@
-add_library(libStringDistance StringDistance.cpp)
-target_include_directories(libStringDistance PUBLIC .)
+add_library(libStringUtils StringUtils.cpp)
+target_include_directories(libStringUtils PUBLIC .)
